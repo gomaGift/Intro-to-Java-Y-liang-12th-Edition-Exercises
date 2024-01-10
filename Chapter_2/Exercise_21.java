@@ -23,13 +23,16 @@ public class Exercise_21 {
         investmentAmount = scanner.nextDouble();
 
         System.out.print("Enter annual interest rate: ");
-        annualInterestRate = scanner.nextDouble() / 100;
-        monthlyInterestRate= annualInterestRate / 12;
+        annualInterestRate = scanner.nextDouble() / 100; // convert from percentage
+        monthlyInterestRate= annualInterestRate / 12; // convert to monthly interest
 
         System.out.print("Enter years of investment: ");
         numberOfYearsOfInvestment = scanner.nextInt();
 
         futureInvestmentValue = investmentAmount * Math.pow(1 + monthlyInterestRate, numberOfYearsOfInvestment * 12);
         System.out.printf("Future investment is: %.2f", futureInvestmentValue);
+
+
+        scanner.close();
     }
 }
