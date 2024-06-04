@@ -14,7 +14,7 @@ import java.util.Scanner;
  * If the discriminant is positive, display two roots. If the discriminant is 0, display one root.
  * Otherwise, display “The equation has no real roots.”Note you can use Math.pow(x, 0.5) to compute sqr(x).
  */
-public class SolveQuadraticEquation {
+public class Exercise_1 {
    public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print(" Enter the a,b c: ");
